@@ -2,16 +2,14 @@
 @import '_frow';
 
 html, body {
-    margin: 0 auto;
     padding: 0;
     border: 0;
     height: 100%;
-    color: #EEE;
+    color: #333;
     font-family: 'Lato', sans-serif;
-    background-color: #111;
+    background-color: #E1F5FE;
     line-height: 1.6;
     font-size: 18px;
-    max-width: 650px;
 }
 .logo {
     text-align: center;
@@ -26,16 +24,19 @@ html, body {
     text-align: center;
     width: 100%;
     a {
-        color: #EEE;
+        color: #333;
     }
 }
 .email {
     font-size: 25px;
-    background-color: #EEE;
+    background-color: #FFF;
     font-weight: 400;
     border-radius: 4px 0 0 4px;
     border: 1px solid transparent;
     height: 2em;
+}
+.card-shadow {
+    background-color: #FFF;
 }
 .mailing-list {
     padding-top: 40px;
@@ -53,7 +54,7 @@ html, body {
     border: 1px solid transparent;
     border-radius: 0 4px 4px 0;
     background-color: #03A9F4;
-    color: #111;
+    color: #FFF;
     height: 2em;
     -webkit-appearance: none;
 }
