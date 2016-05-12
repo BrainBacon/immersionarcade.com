@@ -10,6 +10,7 @@ gulp.task('styles', function() {
     gulp.src('styles.scss')
         .pipe(sass({
             includePaths: [
+                'node_modules/reset-css',
                 'node_modules/frow/sass'
             ]
         }))

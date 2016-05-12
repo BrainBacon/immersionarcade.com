@@ -1,7 +1,8 @@
+@import '_reset';
 @import '_frow';
 
 html, body {
-    margin: 40px auto;
+    margin: 0 auto;
     padding: 0;
     border: 0;
     height: 100%;
@@ -67,4 +68,10 @@ html, body {
     .btn {
         border-radius: 0  0 4px 4px;
     }
+}
+.frow {
+    padding: 0 40px;
+}
+p {
+    padding-bottom: 40px;
 }
