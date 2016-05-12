@@ -16,8 +16,6 @@ html, body {
 .logo {
     text-align: center;
     padding: 40px;
-    margin-left: auto;
-    margin-right: auto;
     height: auto;
     font-family: Montserrat, sans-serif;
     text-align: center;
@@ -71,8 +69,11 @@ html, body {
     }
 }
 .frow {
-    padding: 0 40px;
+    padding: 40px;
+}
+em {
+    font-style: italic;
 }
 p {
-    padding-bottom: 40px;
+    padding-bottom: 10px;
 }
