@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/BrainBacon/immersionarcade.com#readme",
   "dependencies": {
-    "frow": "0.9.2",
+    "frow": "1.0.0",
     "gulp": "3.9.1",
     "gulp-autoprefixer": "3.1.0",
     "gulp-concat": "2.6.0",
