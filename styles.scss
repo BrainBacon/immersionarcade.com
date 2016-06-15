@@ -2,6 +2,7 @@
 @import '_frow';
 
 html, body {
+    width: 100%;
     padding: 0;
     border: 0;
     height: 100%;
@@ -88,7 +89,7 @@ hr {
         border-radius: 0  0 4px 4px;
     }
 }
-.frow {
+.pad {
     padding: 40px;
 }
 em {
@@ -127,5 +128,9 @@ p {
     }
     p {
         width: 100%;
+        text-align: left;
     }
+}
+.frow-container {
+    width: 100%;
 }
