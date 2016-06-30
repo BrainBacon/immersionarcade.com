@@ -1,6 +1,10 @@
 @import '_reset';
 @import '_frow';
 
+* {
+   -webkit-transition: width 0.4s, height 0.4s, font-size 0.4s, font-weight 0.4s;
+   transition: width 0.4s, height 0.4s, font-size 0.4s, font-weight 0.4s;
+}
 html, body {
     width: 100%;
     padding: 0;
@@ -140,4 +144,16 @@ p {
 }
 .frow-container {
     width: 100%;
+}
+
+/* MD */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* LG */
+@media (min-width: 1200px) {
+}
+@media (min-width: 992px) {
+    .logo svg {
+        margin: 0 200px;
+    }
 }
