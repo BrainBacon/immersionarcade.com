@@ -38,7 +38,14 @@ hr {
 a {
     text-decoration: underline;
 }
+.header {
+    background-image: url(https://googledrive.com/host/0BxeRyCnTcQvZMVZYZzZFNm5MZGs/10.jpg);
+    background-size: cover;
+    background-position: 60% 0%; 
+}
 .logo {
+    fill: #fff;
+    color: #fff;
     width: 100%;
     text-align: center;
     padding: 40px;
@@ -46,6 +53,11 @@ a {
     font-family: Montserrat, sans-serif;
     text-align: center;
     font-size: 80px;
+    filter: drop-shadow(1px 1px 1px #000);
+    -webkit-filter: drop-shadow(1px 1px 1px #000);
+    h4 {
+        padding-top: 40px;
+    }
 }
 .text, .email {
     font-weight: 100;
@@ -120,6 +132,7 @@ p {
     position:absolute;
 }
 .tab-bar {
+    margin-top: 0 !important;
     padding: 10px;
     background-color: #eee;
     margin: 20px 0;
@@ -156,4 +169,36 @@ p {
     .logo svg {
         margin: 0 200px;
     }
+}
+
+$images: 11;
+$transition: 1.5;
+$time: 10 * $images + $transition * $images;
+@keyframes slidy {
+    0% {
+      left: 0%;
+    }
+    @for $i from 1 through ($images - 1) {
+        #{($i * 100 / $images - 100 / $time / $transition) * 1%} {
+            left: ($i - 1) * -100%;
+        }
+        #{$i * 100 / $images * 1%} {
+            left: $i * -100%;
+        }
+    }
+    100% {
+        left: ($images - 1) * -100%;
+    }
+}
+#slider {
+    overflow: hidden;
+    position: relative;
+    left: 0;
+    width: $images * 100%;
+    img {
+        width: 100% / $images;
+        float: left; 
+        height: auto;
+    }
+    animation: (1s * $time) slidy infinite; 
 }
