@@ -173,7 +173,7 @@ p {
 
 $images: 11;
 $transition: 1.5;
-$time: 10 * $images + $transition * $images;
+$time: 5 * $images + $transition * $images;
 @keyframes slidy {
     0% {
       left: 0%;
