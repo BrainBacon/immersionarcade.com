@@ -190,8 +190,10 @@ $time: 10 * $images + $transition * $images;
         left: ($images - 1) * -100%;
     }
 }
-#slider {
+.gallery {
     overflow: hidden;
+}
+.slider {
     position: relative;
     left: 0;
     width: $images * 100%;
