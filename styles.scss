@@ -1,6 +1,15 @@
 @import '_reset';
 @import '_frow';
 
+$black: #000;
+$white: #fff;
+$light-blue: #e1f5fe;
+$blue: #4fc3f7;
+$dark-blue: #03a9f4;
+$dark-grey: #333;
+$grey: #ccc;
+$light-grey: #999;
+
 * {
    -webkit-transition: width 0.4s, height 0.4s, font-size 0.4s, font-weight 0.4s;
    transition: width 0.4s, height 0.4s, font-size 0.4s, font-weight 0.4s;
@@ -10,9 +19,9 @@ html, body {
     padding: 0;
     border: 0;
     height: 100%;
-    color: #333;
+    color: $dark-grey;
     font-family: 'Lato', sans-serif;
-    background-color: #E1F5FE;
+    background-color: $light-blue;
     line-height: 1.6;
     font-size: 18px;
 }
@@ -32,8 +41,8 @@ h4 {
 hr {
     width: 100%;
     border: 0;
-    border-bottom: 1px dashed #ccc;
-    background: #999;
+    border-bottom: 1px dashed $grey;
+    background: $light-grey;
 }
 a {
     text-decoration: underline;
@@ -44,8 +53,8 @@ a {
     background-position: 60% 0%; 
 }
 .logo {
-    fill: #fff;
-    color: #fff;
+    fill: $white;
+    color: $white;
     width: 100%;
     text-align: center;
     padding: 40px;
@@ -53,8 +62,8 @@ a {
     font-family: Montserrat, sans-serif;
     text-align: center;
     font-size: 80px;
-    filter: drop-shadow(1px 1px 1px #000);
-    -webkit-filter: drop-shadow(1px 1px 1px #000);
+    filter: drop-shadow(1px 1px 1px $black);
+    -webkit-filter: drop-shadow(1px 1px 1px $black);
     h4 {
         padding-top: 40px;
     }
@@ -64,19 +73,19 @@ a {
     text-align: center;
     width: 100%;
     a {
-        color: #333;
+        color: $dark-grey;
     }
 }
 .email {
     font-size: 25px;
-    background-color: #FFF;
+    background-color: $white;
     font-weight: 400;
     border-radius: 4px 0 0 4px;
     border: 1px solid transparent;
     height: 2em;
 }
 .card-shadow {
-    background-color: #FFF;
+    background-color: $white;
 }
 .mailing-list {
     padding-top: 40px;
@@ -93,13 +102,13 @@ a {
     user-select: none;
     border: 1px solid transparent;
     border-radius: 0 4px 4px 0;
-    background-color: #03A9F4;
-    color: #FFF;
+    background-color: $dark-blue;
+    color: $white;
     height: 2em;
     -webkit-appearance: none;
 }
 .btn:hover {
-    background-color: #4FC3F7;
+    background-color: $blue;
 }
 @media (max-width: 980px) {
     .email {
@@ -134,10 +143,13 @@ p {
 .tab-bar {
     margin-top: 0 !important;
     padding: 10px;
-    background-color: #eee;
     margin: 20px 0;
     li {
         margin: 0 20px;
+    }
+    background-color: $dark-blue;
+    a {
+        color: $white;
     }
     a:hover {
         text-decoration: none;
@@ -145,7 +157,7 @@ p {
 }
 .games {
     a {
-        color: #03A9F4;
+        color: $dark-blue;
     }
     p {
         width: 100%;
