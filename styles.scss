@@ -54,6 +54,10 @@ a {
     background-color: $dark-blue;
     background-size: cover;
     background-position: 60% 0%; 
+    svg {
+        filter: drop-shadow(1px 1px 1px $black);
+        -webkit-filter: drop-shadow(1px 1px 1px $black);
+    }
 }
 .logo {
     fill: $white;
@@ -62,14 +66,15 @@ a {
     text-align: center;
     padding: 40px;
     height: auto;
-    font-family: Montserrat, sans-serif;
     text-align: center;
-    font-size: 80px;
-    filter: drop-shadow(1px 1px 1px $black);
-    -webkit-filter: drop-shadow(1px 1px 1px $black);
-    h4 {
-        padding-top: 40px;
-    }
+}
+.slogan {
+    font-style: italic;
+    color: $white;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 5vw;
+    fill: $white;
+    margin-bottom: 40px;
 }
 .text, .email {
     font-weight: 100;
