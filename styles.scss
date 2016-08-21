@@ -50,7 +50,7 @@ a {
 .header {
     position: relative;
     z-index: 5;
-    background-image: url(https://googledrive.com/host/0BxeRyCnTcQvZMVZYZzZFNm5MZGs/10.jpg);
+    background-image: url(media/header.jpg);
     background-color: $dark-blue;
     background-size: cover;
     background-position: 60% 0%; 
@@ -213,7 +213,7 @@ p {
     }
 }
 
-$images: 11;
+$images: 5;
 $transition: 1.5;
 $time: 5 * $images + $transition * $images;
 @keyframes slidy {
