@@ -97,8 +97,12 @@ a {
 }
 .mailing-list {
     padding-top: 40px;
+    .btn {
+        border-radius: 0 4px 4px 0;
+    }
 }
-.btn {
+.btn, a.btn {
+    text-decoration: none;
     display: block;
     width: 100%;
     font-size: 25px;
@@ -109,7 +113,7 @@ a {
     cursor: pointer;
     user-select: none;
     border: 1px solid transparent;
-    border-radius: 0 4px 4px 0;
+    border-radius: 4px;
     background-color: $dark-blue;
     color: $white;
     height: 2em;
@@ -122,7 +126,7 @@ a {
     .email {
         border-radius: 4px 4px 0 0;
     }
-    .btn {
+    .mailing-list .btn {
         border-radius: 0  0 4px 4px;
     }
 }
